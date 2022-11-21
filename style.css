@@ -74,10 +74,44 @@ html, body {
     padding-bottom: 50px;
 }
 
-.links a {
-    color: #515359;
+.circle-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
 }
 
-.links a hover {
-    color: #46C7B0;
+.circle-container:hover {
+    border: 1px solid #46C7B0;
+    fill: #46C7B0;
+    border-radius: 50%; 
 }
+
+
+.circle-container a svg:hover {
+    fill: #46C7B0;
+}
+
+.circle-container a{
+    margin: auto;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+    .image {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .image img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .content h2{
+        font-size: 54px;
+    }
+
+}
+
